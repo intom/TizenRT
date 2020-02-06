@@ -1,0 +1,3 @@
+config ENTRY_PERSON_DETECTION
+	bool "\"Person Detection Tensorflow Lite Micro!\" C++ example"
+	depends on EXAMPLES_PERSON_DETECTION

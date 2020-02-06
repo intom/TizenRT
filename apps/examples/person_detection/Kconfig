@@ -1,0 +1,15 @@
+#
+# For a description of the syntax of this configuration file,
+# see kconfig-language at https://www.kernel.org/doc/Documentation/kbuild/kconfig-language.txt
+#
+
+config EXAMPLES_PERSON_DETECTION
+	bool "\"Person Detection Tensorflow Lite Micro!\" C++ example"
+	default n
+	depends on HAVE_CXXINITIALIZE
+	---help---
+		Enable the \"Person Detection Tensorflow Lite Micro!\" C++ example
+
+config USER_ENTRYPOINT
+	string
+	default "person_detection_main" if ENTRY_PERSON_DETECTION
